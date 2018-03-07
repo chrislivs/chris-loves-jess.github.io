@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#FFF0FF, #F7FEFF);
+}
+
+.left {
+	border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+
+  z-index: 2;
+}
+
+.middle {
+	margin-left: 3%;
+	margin-right: 3%;
+
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+
+  z-index: 2;
+}
+
+.right {
+	border-radius: 50%;
+
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  animation-delay: 4s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+
+  z-index: 2;
+}
+
+.photo {
+	text-align: center;
+
+	z-index: 2;
+}
+
+h1 {
+	font-family: "Lobster Two";
+	color: #330000;
+	text-align: center;
+	font-weight: 200;
+	font-size: 100px;
+	line-height: 0.5;
+
+	z-index: 2;
+}
+
+h2 {
+	display: flex;
+	margin-top: auto;
+	font-size: 30px;
+	font-family: "Roboto Slab";
+	z-index: 2;
+}
+
+.foot {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 1rem;
+	font-family: Hind;
+	z-index: 2;
+}
+
+p {
+	font-family: "Monoton";
+}
+
+.sign {
+	display: inline-flex;
+	margin-top: 50px;
+}
