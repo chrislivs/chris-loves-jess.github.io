@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#FFF0FF, #F7FEFF);
+}
+
+.photo1 {
+	border-radius: 50%;
+
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+
+  z-index: 2;
+}
+
+.photo2 {
+	border-radius: 50%;
+	margin-left: 2%;
+	margin-right: 2%;
+
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+
+  z-index: 2;
+}
+
+.photo3 {
+	border-radius: 50%;
+	margin-top: 2%;
+
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+
+  z-index: 2;
+}
+
+.photo4 {
+	border-radius: 50%;
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  animation-delay: 3s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+
+  z-index: 2;
+}
+
+.photo {
+	text-align: center;
+	z-index: 2;
+}
+
+h1 {
+	font-family: "Lobster Two";
+	color: #470c0c;
+	text-align: center;
+	font-weight: 200;
+	font-size: 100px;
+	line-height: 0.2;
+	z-index: 2;
+}
+
+h2 {
+	display: flex;
+	margin-top: auto;
+	font-size: 30px;
+	font-family: "Roboto Slab";
+	color: #e22828;
+	z-index: 2;
+}
+
+.foot {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 1rem;
+	font-family: Hind;
+	z-index: 2;
+}
+
+p {
+	font-family: "Monoton";
+	color: #07508c;
+}
+
+.sign {
+	display: inline-flex;
+	margin-top: 50px;
+}
