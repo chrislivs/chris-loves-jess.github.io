@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #ebffff;
+}
+
+.head {
+	text-align: center;
+	line-height: 0.5vh;
+}
+
+h1 {
+	font-family: "Fredericka the Great";
+	color: #4f0000;
+	font-weight: 250;
+	font-size: 100px;
+}
+
+h2 {
+	font-family: "Dancing Script";
+	color: #ff0000;
+	font-size: 50px;
+	padding-top: 3vh;
+	margin-bottom: 5vh;
+}
+
+.photo {
+	display: flex;
+	align-items: center;
+	margin-top: -25vh;
+	justify-content: center;
+}
+
+.photo1 {
+	border-radius: 50%;
+
+  opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+	-webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+.photo2 {
+	margin-top: 15vh;
+
+	border-radius: 50%;
+
+  opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 0.75s;
+	-webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+.photo3 {
+	margin-top: 30vh;
+
+	border-radius: 50%;
+
+  opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+	-webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+.photo4 {
+	margin-top: 45vh;
+
+	border-radius: 50%;
+
+  opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 2.25s;
+	-webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+.photo5 {
+	margin-top: 60vh;
+
+	border-radius: 50%;
+
+  opacity: 0;
+	-webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+	-webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+.foot {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 1rem;
+	font-family: Hind;
+	font-family: "Monoton";
+	color: #000000;
+}
