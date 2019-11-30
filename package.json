@@ -1,0 +1,23 @@
+{
+  "name": "chrislovesjess.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "reload": "^3.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "reload -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrislivs/chrislovesjess.github.io.git"
+  },
+  "author": "Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrislivs/chrislovesjess.github.io/issues"
+  },
+  "homepage": "https://github.com/chrislivs/chrislovesjess.github.io#readme"
+}

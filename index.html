@@ -7,23 +7,75 @@
 </head>
 
 <body>
-	<div class="head">
-		<h1>Chris & Jess</h1>
-		<h2>Wedding coming soon!</h2>
-	</div>
-	<div class="photo">
-		<img class="photo1" src="Photo1.JPG" height="190vh" width="190vh"/>
-		<img class="photo2" src="Photo2.JPG" height="190vh" width="190vh"/>
-		<img class="photo3" src="Photo3.JPG" height="190vh" width="190vh"/>
-		<img class="photo4" src="Photo4.JPG" height="190vh" width="190vh"/>
-		<img class="photo5" src="Photo5.JPG" height="190vh" width="190vh"/>
-	</div>
+	<div class="wrapper">
+		<div class="header">
+			<h1>Chris & Jess</h1>
+		</div>
+
+		<div class="timeline">
+			<div class="timeline__block">
+				<div class="timeline__tick timeline__tick--first"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--major"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--major"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--major"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--final"></div>
+			</div> <!-- close .__block -->
+		</div> <!-- close .timeline -->
+	</div> <!-- close .wrapper -->
+
+	<!-- <div class="countdown">
+		<div class="countdown__value countdown__value--days" id="days"></div>
+		<div class="countdown__value countdown__value--hours" id="hours"></div>
+		<div class="countdown__value countdown__value--minutes" id="minutes"></div>
+		<div class="countdown__value countdown__value--seconds" id="seconds"></div>
+	</div> -->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
+	<script>
+		(function ($, undefined) {
+			const WEDDING_DATE = new Date(2020, 10, 10, 15, 0, 0);
+
+			function runCountdown() {
+				const endTime = (Date.parse(WEDDING_DATE) / 1000);
+				const now = Date.parse(new Date()) / 1000;
+				const timeLeft = endTime - now;
+
+				var days = Math.floor(timeLeft / 86400);
+				var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+				var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+				var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+				if (hours < "10") { hours = "0" + hours; }
+				if (minutes < "10") { minutes = "0" + minutes; }
+				if (seconds < "10") { seconds = "0" + seconds; }
+
+				$("#days").html(days + " <span>days</span>");
+				$("#hours").html(hours + " <span>hours</span>");
+				$("#minutes").html(minutes + " <span>minutes</span>");
+				$("#seconds").html(seconds + " <span>seconds</span>");
+			}
+
+			setInterval(function() { runCountdown(); }, 1000);
+
+			$(document).ready(function() {
+			$('html, body, *').mousewheel(function(e, delta) {
+			this.scrollLeft -= (delta);
+			e.preventDefault();
+			});
+			});
+		})(jQuery);
+	</script>
 </body>
-
-<footer>
-	<div class="foot">
-		<p>P.S. I love you <strong>more</strong></p>
-	</div>
-</footer>
-
 </html>

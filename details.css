@@ -1,137 +1,88 @@
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
-@import url('https://fonts.googleapis.com/css?family=Monoton');
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-html, body {
+body {
+	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
-	background: #ebffff;
+	background: #FFFFFF;
 }
 
-.head {
-	text-align: center;
-	line-height: 0.5vh;
+.wrapper {
+	position: relative;
+	width: 100%;
+	padding: 60px;
+}
+
+.header {
+	position: absolute;
+}
+
+.timeline {
+	display: flex;
+}
+.timeline__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: calc(100vh - 120px);
+	border-bottom: 10px solid #cccccc;
+}
+
+.timeline__tick {
+	width: 20vw;
+	border-left: 10px solid #cccccc;
+}
+
+.timeline__tick--major {
+	height: 10vh;
+}
+
+.timeline__tick--minor {
+	height: 4vh;
+}
+
+.timeline__tick--first {
+	height: 20vh;
+}
+
+.timeline__tick--final {
+	height: 20vh;
+	width: 0 !important;
+	padding-right: 60px;
 }
 
 h1 {
-	font-family: "Fredericka the Great";
-	color: #4f0000;
-	font-weight: 250;
+	color: #222222;
+	font-weight: 800;
 	font-size: 100px;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	letter-spacing: -0.05em;
 }
 
 h2 {
-	font-family: "Dancing Script";
 	color: #ff0000;
 	font-size: 50px;
 	padding-top: 3vh;
 	margin-bottom: 5vh;
+	line-height: 1;
 }
 
-.photo {
-	display: flex;
-	align-items: center;
-	margin-top: -25vh;
-	justify-content: center;
+.countdown {
+
 }
 
-.photo1 {
-	border-radius: 50%;
+.countdown__value {
 
-  opacity: 0;
-	-webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-	-webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  animation-duration: 0.75s;
 }
 
-.photo2 {
-	margin-top: 15vh;
-
-	border-radius: 50%;
-
-  opacity: 0;
-	-webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  animation-delay: 0.75s;
-	-webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-}
-
-.photo3 {
-	margin-top: 30vh;
-
-	border-radius: 50%;
-
-  opacity: 0;
-	-webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  animation-delay: 1.5s;
-	-webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-}
-
-.photo4 {
-	margin-top: 45vh;
-
-	border-radius: 50%;
-
-  opacity: 0;
-	-webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  animation-delay: 2.25s;
-	-webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-}
-
-.photo5 {
-	margin-top: 60vh;
-
-	border-radius: 50%;
-
-  opacity: 0;
-	-webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
-	-webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-}
-
-.foot {
+.footer {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	padding: 1rem;
-	font-family: Hind;
-	font-family: "Monoton";
 	color: #000000;
 }
