@@ -22,7 +22,47 @@ body {
 .timeline {
 	display: flex;
 }
-.timeline__block {
+
+.timeline__events {
+	position: absolute;
+	top: 35vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.timeline__event {
+	width: 40vw;
+	padding-right: 60px;
+	/* background-color: #eeeeee;
+	padding: 30px;
+	border-radius: 25px; */
+}
+
+.timeline__event-spacer {
+	width: 20vw;
+}
+
+.timeline__event:nth-of-type(2n) {
+	padding-top: 40vh;
+}
+
+.timeline__event h4 {
+	font-size: 2.7em;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	margin: 0;
+	padding: 0 0 12px 0;
+}
+
+.timeline__event p {
+	font-size: 2em;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+}
+
+.timeline__ticks {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -50,10 +90,10 @@ body {
 .timeline__tick--final {
 	height: 20vh;
 	width: 0 !important;
-	padding-right: 60px;
 }
 
 h1 {
+	position: fixed;
 	color: #222222;
 	font-weight: 800;
 	font-size: 100px;
@@ -63,20 +103,30 @@ h1 {
 	letter-spacing: -0.05em;
 }
 
-h2 {
-	color: #ff0000;
-	font-size: 50px;
-	padding-top: 3vh;
-	margin-bottom: 5vh;
-	line-height: 1;
-}
-
 .countdown {
 
 }
 
 .countdown__value {
 
+}
+
+.heart {
+	display: inline-block;
+	vertical-align: top;
+  width: 100px;
+  height: 100px;
+	margin-left: -40px;
+	margin-top: -30px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 1s;
+}
+
+.heart.is-active {
+	background-position: -2800px 0;
 }
 
 .footer {

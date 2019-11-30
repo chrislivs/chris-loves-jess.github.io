@@ -9,11 +9,25 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<h1>Chris & Jess</h1>
+			<h1>Chris & Jess <div class="heart"></div></h1>
 		</div>
 
 		<div class="timeline">
-			<div class="timeline__block">
+			<div class="timeline__events">
+				<div class="timeline__event">
+					<h4>First date</h4>
+					<p>Chris makes a move on a young Jessika at Concordia gym.</p>
+				</div>
+
+				<div class="timeline__event-spacer"></div>
+
+				<div class="timeline__event">
+					<h4>Made love</h4>
+					<p>Jessika made sweet sweet love to Christopher for the first time.</p>
+				</div>
+			</div>
+
+			<div class="timeline__ticks">
 				<div class="timeline__tick timeline__tick--first"></div>
 				<div class="timeline__tick timeline__tick--minor"></div>
 				<div class="timeline__tick timeline__tick--minor"></div>
@@ -30,7 +44,7 @@
 				<div class="timeline__tick timeline__tick--minor"></div>
 				<div class="timeline__tick timeline__tick--minor"></div>
 				<div class="timeline__tick timeline__tick--final"></div>
-			</div> <!-- close .__block -->
+			</div> <!-- close .__ticks -->
 		</div> <!-- close .timeline -->
 	</div> <!-- close .wrapper -->
 
@@ -69,11 +83,22 @@
 
 			setInterval(function() { runCountdown(); }, 1000);
 
+			// scrolljack
 			$(document).ready(function() {
-			$('html, body, *').mousewheel(function(e, delta) {
-			this.scrollLeft -= (delta);
-			e.preventDefault();
-			});
+				$('html, body, *').mousewheel(function(e, delta) {
+					this.scrollLeft -= (delta);
+					e.preventDefault();
+				});
+
+				$('.heart').click(function (e) {
+					var $heart = $(this);
+					e.preventDefault();
+					$heart.addClass('is-active');
+
+					setTimeout(function () {
+						$heart.removeClass('is-active');
+					}, 1500);
+				});
 			});
 		})(jQuery);
 	</script>
