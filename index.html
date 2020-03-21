@@ -15,74 +15,99 @@
 		<div class="timeline">
 			<div class="timeline__events">
 				<div class="timeline__event">
-					<h4>Went to elementary school</h4>
-					<p>TODO...</p>
+					<h4>First encounter 🚌</h4>
+					<p>Chris and Jess attend Pierre de Coubertin</p>
+					<p class="date">1998</p>
 				</div>
 
-				<div class="timeline__event-spacer--small"></div>
-
 				<div class="polaroid">
+					<img src="/Photo1.jpg">
 				</div>
 
 				<div class="timeline__event">
-					<h4>Communion together</h4>
-					<p>TODO...</p>
+					<h4>First Communion 💒</h4>
+					<p>What are the odds these two end up together?</p>
+					<p class="date">2001</p>
 				</div>
 
 				<div class="timeline__event-spacer--large"></div>
 
 				<div class="timeline__event">
-					<h4>First date</h4>
-					<p>Chris makes a move on a young Jessika at Concordia gym.</p>
+					<h4>First date 👫🏻</h4>
+					<p>Chris makes a move on a young Jessika at Leonardo da Vinci gym.</p>
+					<p class="date">May 25, 2015</p>
+				</div>
+
+				<div class="polaroid">
+					<img src="/Photo2.jpg">
+				</div>
+
+				<div class="timeline__event">
+					<h4>First kiss 💋</h4>
+					<p class="date">May 29, 2015</p>
 				</div>
 
 				<div class="timeline__event-spacer--small"></div>
 
 				<div class="timeline__event">
-					<h4>Official gf/bf</h4>
-					<p>TODO...</p>
+					<h4>Status update: official ✅</h4>
+					<p>They declared each other gf/bf and had the facebook statuses to match.</p>
+					<p class="date">June 2015</p>
 				</div>
 
-				<div class="timeline__event-spacer--small"></div>
-
-				<div class="timeline__event">
-					<h4>I love you's</h4>
-					<p>TODO...</p>
+				<div class="polaroid">
+					<img src="/Photo3.jpg">
 				</div>
 
-				<div class="timeline__event-spacer--small"></div>
+				<div class="timeline__event">
+					<h4>I love you ♥️</h4>
+					<p>Profession of love.</p>
+					<p class="date">July 2015</p>
+				</div>
+
+				<div class="polaroid">
+					<img src="/Photo5.jpg">
+				</div>
 
 				<div class="timeline__event">
-					<h4>Tremblant first year anniversary</h4>
-					<p>TODO...</p>
+					<h4>First anniversary 🥂</h4>
+					<p>Chris and Jess spend a weekend at Mont Tremblant.</p>
+					<p class="date">May 25, 2016</p>
 				</div>
 
 				<div class="timeline__event-spacer"></div>
 
 				<div class="timeline__event">
-					<h4>Proposal</h4>
-					<p>TODO...</p>
+					<h4>Engagement 💍</h4>
+					<p>She says yes.</p>
+					<p class="date">August 31st, 2018</p>
 				</div>
 
 				<div class="timeline__event-spacer"></div>
 
+				<div class="polaroid">
+					<img src="/Photo4.jpg">
+				</div>
+
 				<div class="timeline__event">
-					<h4>Iceland & Belgium</h4>
-					<p>TODO...</p>
+					<h4>First vacation ✈️</h4>
+					<p>They take their first plane ride together. Two weeks in Iceland & Belgium.</p>
+					<p class="date">September, 2018</p>
 				</div>
 
 				<div class="timeline__event-spacer--small"></div>
 
 				<div class="timeline__event">
-					<h4>Cancun</h4>
-					<p>TODO...</p>
+					<h4>Cancun 🏖</h4>
+					<p>Second trip.</p>
+					<p class="date">December, 2019</p>
 				</div>
 
 				<div class="timeline__event-spacer--small"></div>
 
 				<div class="timeline__event">
 					<h4>Wedding</h4>
-					<p>TODO add counter</p>
+					<p><span class="date js-countdown">10/10/2020</span></p>
 				</div>
 			</div>
 
@@ -126,17 +151,19 @@
 				<div class="timeline__tick timeline__tick--major"></div>
 				<div class="timeline__tick timeline__tick--minor"></div>
 				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--major"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--major"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--major"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
+				<div class="timeline__tick timeline__tick--minor"></div>
 				<div class="timeline__tick timeline__tick--final"></div>
 			</div> <!-- close .__ticks -->
 		</div> <!-- close .timeline -->
 	</div> <!-- close .wrapper -->
-
-	<!-- <div class="countdown">
-		<div class="countdown__value countdown__value--days" id="days"></div>
-		<div class="countdown__value countdown__value--hours" id="hours"></div>
-		<div class="countdown__value countdown__value--minutes" id="minutes"></div>
-		<div class="countdown__value countdown__value--seconds" id="seconds"></div>
-	</div> -->
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script>
@@ -158,10 +185,7 @@
 				if (minutes < "10") { minutes = "0" + minutes; }
 				if (seconds < "10") { seconds = "0" + seconds; }
 
-				$("#days").html(days + " <span>days</span>");
-				$("#hours").html(hours + " <span>hours</span>");
-				$("#minutes").html(minutes + " <span>minutes</span>");
-				$("#seconds").html(seconds + " <span>seconds</span>");
+				$(".js-countdown").html(days + ":" + hours + ":" + minutes + ":" + seconds);
 			}
 
 			setInterval(function() { runCountdown(); }, 1000);
